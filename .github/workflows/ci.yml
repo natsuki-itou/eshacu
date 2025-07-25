@@ -33,7 +33,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0      
+          fetch-depth: 0
+          path: .
+      
+      - name: 
+        run: |
+          echo "===== WORKSPACE TREE ====="
+          tree -L 2 || ls -R | head -n 200
 
       # Node & pnpm
       - name: Set up Node 20
