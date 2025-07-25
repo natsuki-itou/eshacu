@@ -50,7 +50,7 @@ jobs:
       - name: Set up pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 8 # ← lockfileと合わせて変更
+          version: 10 # ← lockfileと合わせて変更
 
       - name: Install dependencies
         working-directory: eshacu-frontend
