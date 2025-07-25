@@ -23,8 +23,8 @@ jobs:
           cache: maven
 
       - name: Run Spring Boot tests
-        run: |
-          cd eshacu-backend
+        working-directory: eshacu-backend
+        run:
           chmod +x mvnw
           ./mvnw -B test
 
@@ -47,11 +47,11 @@ jobs:
           version: 8 # ← lockfileと合わせて変更
 
       - name: Install dependencies
-        run: |
-          cd eshacu-frontend
+        working-directory: eshacu-frontend
+        run: 
           pnpm install --frozen-lockfile
 
       - name: Run ESLint
-        run: |
-          cd eshacu-frontend
+        working-directory: eshacu-frontend
+        run:
           pnpm lint
