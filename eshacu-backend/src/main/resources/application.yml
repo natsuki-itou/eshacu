@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eshacu-backend
+
+cors:
+  allowed-origins:
+    - http://localhost:3000
+
+logging:
+  level:
+    org.springframework.web: DEBUG       # CORS 判定ログを出力

@@ -1,0 +1,10 @@
+/eshacu/docs/
+
+*.log
+*.tmp
+
+# Maven build
+eshacu-backend/target/
+
+# IDE
+.idea/
