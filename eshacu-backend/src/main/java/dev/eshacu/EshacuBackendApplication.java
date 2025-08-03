@@ -1,6 +1,6 @@
-package com.eshacu;
+package dev.eshacu;
 
-import com.eshacu.config.CorsProps;
+import dev.eshacu.config.CorsProps;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

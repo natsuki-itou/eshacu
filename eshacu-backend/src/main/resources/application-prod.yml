@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: eshacu-backend
+
+cors:
+  allowed-origins:
+    - https://eshacu.dev        # ← 本番 URL のみ

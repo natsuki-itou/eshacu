@@ -1,4 +1,4 @@
-package com.eshacu.config;
+package dev.eshacu.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
