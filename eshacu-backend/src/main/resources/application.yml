@@ -1,11 +1,39 @@
+server:
+  port: 8080
+
 spring:
   application:
     name: eshacu-backend
+  profiles:
+    active: dev
+
+  mvc:
+    problem details:
+      enabled: false   # RFC7807は無効、独自のErrorResponseを使う
+
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+    time-zone: Asia/Tokyo
 
 cors:
   allowed-origins:
-    - http://localhost:3000
+    - https://eshacu.dev
+  allowed-methods: [GET, HEAD, OPTIONS]
+  allowed-headers: ["*"]
+  exposed-headers: ["Location"]   # 201 Created の Location をJS側で読みたい場合など
+  allow-credentials: false        # 必要なら true に（Cookie運用時）
+  max-age: 600
+  path-patterns: ["/api/**"]
+
+springdoc:
+  api-docs:
+    enabled: false
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: false
+    path: /swagger-ui.html
 
 logging:
   level:
-    org.springframework.web: DEBUG       # CORS 判定ログを出力
+    root: INFO

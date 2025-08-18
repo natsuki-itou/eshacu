@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:eshacu;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update     # 開発は自動でテーブル生成・更新
+    show-sql: true         # SQLを標準出力に出す
+    properties:
+      hibernate:
+        format_sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+cors:
+  allowed-origins:
+    - http://localhost:3000
+  allowed-methods: [GET, POST, HEAD, PUT, PATCH, DELETE, OPTIONS]
+  allowed-headers: ["*"]
+  allow-credentials: true
+  max-age: 3600
+  path-patterns: ["/api/**"]
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+  paths-to-match: /api/**
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    dev.eshacu.controller.advice: INFO
+
