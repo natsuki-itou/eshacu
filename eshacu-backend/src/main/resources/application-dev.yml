@@ -1,22 +1,23 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:eshacu;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:eshacu;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
     driver-class-name: org.h2.Driver
     username: sa
     password:
-
   jpa:
     hibernate:
-      ddl-auto: update     # 開発は自動でテーブル生成・更新
-    show-sql: true         # SQLを標準出力に出す
+      ddl-auto: update         # ← テーブル自動作成
+    show-sql: true
     properties:
       hibernate:
         format_sql: true
-
+    defer-datasource-initialization: true  # ← data.sql を「DDLの後」に実行
+  sql:
+    init:
+      mode: always             # ← data.sql を有効化
   h2:
     console:
       enabled: true
-      path: /h2-console
 
 cors:
   allowed-origins:

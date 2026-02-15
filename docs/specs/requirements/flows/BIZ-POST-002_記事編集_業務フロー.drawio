@@ -1,0 +1,96 @@
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" modified="2026-01-07T00:34:37.845Z" version="22.1.22" etag="3RgV35hmVFjn1iXShYMP" type="embed">
+  <diagram name="Page-1" id="biz-post-002">
+    <mxGraphModel dx="849" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane-admin" value="管理者" style="swimlane;html=1;startSize=20;fontSize=10;fontFamily=Meiryo;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="360" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-9" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="lane-admin" source="tag-flow-2" target="tag-flow-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="310" as="sourcePoint" />
+            <mxPoint x="100" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="340" />
+              <mxPoint x="100" y="340" />
+              <mxPoint x="100" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="start" value="START" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="65" y="40" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="select-post" value="対象記事選択" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="40" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edit-input" value="記事情報編集" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="40" y="200" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="save" value="記事更新" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="40" y="520" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="END" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="65" y="600" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="lane-admin" source="start" target="select-post" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="lane-admin" source="select-post" target="edit-input" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="lane-admin" source="edit-input" target="tag-flow-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="lane-admin" source="save" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CpHDxGxC1lFqfnXHLkxr-1" value="プレビュー確認" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="40" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CpHDxGxC1lFqfnXHLkxr-3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="lane-admin" source="CpHDxGxC1lFqfnXHLkxr-1" target="save" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="134.43" y="455" as="sourcePoint" />
+            <mxPoint x="134.43" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tag-flow-1" value="タグ追加" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="60" y="280" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-2" value="タグ新規作成" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="210" y="280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-3" value="タグ選択" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" parent="lane-admin" vertex="1">
+          <mxGeometry x="40" y="360" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-5" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="lane-admin" source="tag-flow-1" target="tag-flow-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="295" as="sourcePoint" />
+            <mxPoint x="210" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tag-flow-6" value="新規" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="tag-flow-5" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-7" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="lane-admin" source="tag-flow-1" target="tag-flow-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="310" as="sourcePoint" />
+            <mxPoint x="100" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tag-flow-8" value="既存" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="tag-flow-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-10" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="lane-admin" source="tag-flow-3" target="CpHDxGxC1lFqfnXHLkxr-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="390" as="sourcePoint" />
+            <mxPoint x="100" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="header" value="&lt;b&gt;BIZ-POST-002 記事編集 業務フロー&lt;/b&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=12;fontFamily=Meiryo;" parent="1" vertex="1">
+          <mxGeometry x="40" y="10" width="240" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

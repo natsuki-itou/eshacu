@@ -1,35 +1,29 @@
 package dev.eshacu.api.mapper;
 
+import dev.eshacu.api.dto.common.TagDto;
+import dev.eshacu.api.dto.project.ProjectCardDto;
 import dev.eshacu.api.dto.project.ProjectDetailDto;
-import org.mapstruct.Mapper;
-import java.util.List;
+import dev.eshacu.domain.Project;
+import org.mapstruct.*;
 
-// TODO: GPTが怪しいので後で大幅にやばそう 直す必要ありそう
-// TODO: #11 で Project エンティティが定まったら型を差し替え
-class Project {
-    Long id; String title; String summary; String bodyMarkdown;
-    java.time.Instant updatedAt; String heroImageUrl; String repoUrl; String appUrl;
-    java.util.List<String> tags; java.util.List<String> techStack; java.util.List<String> images;
-    // getter想定（スタブ）
-}
+import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface ProjectMapper {
-    ProjectDetailDto toCard(Project entity);
 
-    // 本文は Markdown→HTML 変換前提。#11 で Service を噛ませる想定だが、
-    // ここでは簡易に Markdown をそのまま bodyHtml に入れる（スタブ運用）。
-    default ProjectDetailDto toDetail(Project entity) {
-        String html = entity.bodyMarkdown; // TODO: MarkdownService で変換
-        return new ProjectDetailDto(
-                entity.id,
-                entity.title,
-                entity.summary,
-                html,
-                entity.techStack,
-                entity.images,
-                List.of(), // TODO: TagDTO へ変換
-                entity.updatedAt
-        );
+    @Mapping(target = "tags", expression = "java(toTagDto(entity.getTags()))")
+    ProjectCardDto toCard(Project entity);
+
+    @Mapping(target = "excerpt", source = "summary")
+    @Mapping(target = "bodyHtml", expression = "java(md.toHtml(entity.getBodyMarkdown()))")
+    @Mapping(target = "tags", expression = "java(toTagDto(entity.getTags()))")
+    ProjectDetailDto toDetail(Project entity, @Context MarkdownService md);
+
+    default List<TagDto> toTagDto(List<String> tags) {
+        return (tags == null) ? List.of() : tags.stream().map(TagDto::new).toList();
+    }
+
+    interface  MarkdownService {
+        String toHtml(String markdown);
     }
 }

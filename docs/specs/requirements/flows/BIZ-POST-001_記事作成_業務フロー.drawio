@@ -1,0 +1,165 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
+        <mxGraphModel dx="911" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="tag-flow-9" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="tag-flow-2" target="tag-flow-3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="310" as="sourcePoint"/>
+                        <mxPoint x="100" y="440" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="270" y="340"/>
+                            <mxPoint x="100" y="340"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="pJijsKCdDEbzC-D_hfW9-1" value="管理者" style="swimlane;html=1;startSize=20;fontSize=10;fontFamily=Meiryo;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="360" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-54" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="j7MKrnOTY3L0ehQSDnWP-72" target="j7MKrnOTY3L0ehQSDnWP-71" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="270" y="180"/>
+                            <mxPoint x="100" y="180"/>
+                        </Array>
+                        <mxPoint x="260" y="150" as="sourcePoint"/>
+                        <mxPoint x="120" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="pJijsKCdDEbzC-D_hfW9-8" value="作成元" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="60" y="120" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pJijsKCdDEbzC-D_hfW9-10" value="START" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="65" y="40" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pJijsKCdDEbzC-D_hfW9-6" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="pJijsKCdDEbzC-D_hfW9-10" target="pJijsKCdDEbzC-D_hfW9-8" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="185" y="210" as="sourcePoint"/>
+                        <mxPoint x="185" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="pJijsKCdDEbzC-D_hfW9-14" value="登録確定" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="60" y="520" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pJijsKCdDEbzC-D_hfW9-19" value="END" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="65" y="680" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="pJijsKCdDEbzC-D_hfW9-8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="150" y="134.66" as="sourcePoint"/>
+                        <mxPoint x="210" y="135" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-50" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;下書き&lt;/font&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="j7MKrnOTY3L0ehQSDnWP-49" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="pJijsKCdDEbzC-D_hfW9-8" target="j7MKrnOTY3L0ehQSDnWP-71" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="170" as="sourcePoint"/>
+                        <mxPoint x="100" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-52" value="新規" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="j7MKrnOTY3L0ehQSDnWP-51" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-59" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="pJijsKCdDEbzC-D_hfW9-14" target="j7MKrnOTY3L0ehQSDnWP-73" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="534.8" as="sourcePoint"/>
+                        <mxPoint x="200" y="534.8" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-60" value="未確定" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="j7MKrnOTY3L0ehQSDnWP-59" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-61" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="pJijsKCdDEbzC-D_hfW9-14" target="j7MKrnOTY3L0ehQSDnWP-67" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="575" as="sourcePoint"/>
+                        <mxPoint x="100" y="595" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-62" value="確定" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="j7MKrnOTY3L0ehQSDnWP-61" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="j7MKrnOTY3L0ehQSDnWP-67" target="pJijsKCdDEbzC-D_hfW9-19" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-67" value="入力内容登録" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="40" y="600" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-71" value="記事入力" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="40" y="200" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-72" value="下書き選択" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="210" y="120" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-73" value="下書き保存" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="210" y="520" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-80" value="プレビュー確認" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="40" y="440" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-81" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="j7MKrnOTY3L0ehQSDnWP-80" target="pJijsKCdDEbzC-D_hfW9-14" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="100" y="490" as="sourcePoint"/>
+                        <mxPoint x="100" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ggr_xiXjm2lqQjRVffxw-1" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="j7MKrnOTY3L0ehQSDnWP-73" target="pJijsKCdDEbzC-D_hfW9-19" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="270" y="660"/>
+                            <mxPoint x="100" y="660"/>
+                        </Array>
+                        <mxPoint x="270" y="630" as="sourcePoint"/>
+                        <mxPoint x="100" y="670" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="tag-flow-1" value="タグ追加" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="60" y="280" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="tag-flow-2" value="タグ新規作成" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="210" y="280" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="tag-flow-3" value="タグ選択" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" vertex="1">
+                    <mxGeometry x="40" y="360" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="tag-flow-4" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="j7MKrnOTY3L0ehQSDnWP-71" target="tag-flow-1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="100" y="230" as="sourcePoint"/>
+                        <mxPoint x="100" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="tag-flow-5" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="tag-flow-1" target="tag-flow-2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="295" as="sourcePoint"/>
+                        <mxPoint x="210" y="295" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="tag-flow-6" value="新規" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="tag-flow-5" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="tag-flow-7" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="tag-flow-1" target="tag-flow-3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="310" as="sourcePoint"/>
+                        <mxPoint x="100" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="tag-flow-8" value="既存" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="tag-flow-7" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="tag-flow-10" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="pJijsKCdDEbzC-D_hfW9-1" source="tag-flow-3" target="j7MKrnOTY3L0ehQSDnWP-80" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="390" as="sourcePoint"/>
+                        <mxPoint x="100" y="440" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="j7MKrnOTY3L0ehQSDnWP-78" value="&lt;b&gt;BIZ-POST-001 記事作成 業務フロー&lt;/b&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=12;fontFamily=Meiryo;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="10" width="240" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

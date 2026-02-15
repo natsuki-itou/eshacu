@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0" version="29.2.9">
+  <diagram name="Page-1" id="biz-proj-003">
+    <mxGraphModel dx="1181" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane" parent="1" style="swimlane;html=1;startSize=20;fontSize=10;fontFamily=Meiryo;" value="管理者" vertex="1">
+          <mxGeometry height="800" width="360" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="header" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=12;fontFamily=Meiryo;" value="&lt;b&gt;BIZ-PROJ-003 成果物情報削除 業務フロー&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="240" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="lane" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" value="START" vertex="1">
+          <mxGeometry height="30" width="70" x="65" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="step-1" parent="lane" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" value="対象成果物選択" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="step-2" parent="lane" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" value="成果物情報削除" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="step-3" parent="lane" style="shape=process;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Meiryo;" value="削除結果確認" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="lane" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" value="END" vertex="1">
+          <mxGeometry height="30" width="70" x="65" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane" source="start" target="step-1" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="lane" source="step-1" target="step-2" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="lane" source="step-2" target="step-3" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="lane" source="step-3" target="end" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0" version="29.2.9">
+  <diagram name="Page-1" id="biz-proj-005">
+    <mxGraphModel dx="1722" dy="954" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tag-flow-9" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="lane" source="tag-flow-2" target="tag-flow-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="310" as="sourcePoint" />
+            <mxPoint x="100" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="340" />
+              <mxPoint x="100" y="340" />
+              <mxPoint x="100" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane" parent="1" style="swimlane;html=1;startSize=20;fontSize=10;fontFamily=Meiryo;" value="管理者" vertex="1">
+          <mxGeometry height="860" width="360" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="lane" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" value="START" vertex="1">
+          <mxGeometry height="30" width="70" x="65" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="step-1" parent="lane" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" value="下書き選択" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="step-2" parent="lane" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" value="下書き編集" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="decision-publish" parent="lane" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" value="登録区分" vertex="1">
+          <mxGeometry height="30" width="80" x="60" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="step-3" parent="lane" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" value="下書き保存" vertex="1">
+          <mxGeometry height="30" width="120" x="210" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="step-4" parent="lane" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" value="公開成果物情報登録" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="lane" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" value="END" vertex="1">
+          <mxGeometry height="30" width="70" x="65" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane" source="start" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" target="step-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="lane" source="step-1" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" target="step-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="lane" source="step-2" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" target="tag-flow-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="lane" source="decision-publish" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Meiryo;" target="step-3" value="下書き">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="lane" source="decision-publish" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" target="step-4" value="公開">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="lane" source="step-3" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" target="end" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="580" />
+              <mxPoint x="100" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="lane" source="step-4" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" target="end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-1" value="タグ追加" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=10;fontFamily=Meiryo;" parent="lane" vertex="1">
+          <mxGeometry height="30" width="80" x="60" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-2" value="タグ新規作成" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" parent="lane" vertex="1">
+          <mxGeometry height="30" width="120" x="210" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-3" value="タグ選択" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fontFamily=Meiryo;" parent="lane" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-5" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="lane" source="tag-flow-1" target="tag-flow-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="295" as="sourcePoint" />
+            <mxPoint x="210" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tag-flow-6" value="新規" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="tag-flow-5" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-7" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Meiryo;" parent="lane" source="tag-flow-1" target="tag-flow-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="310" as="sourcePoint" />
+            <mxPoint x="100" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tag-flow-8" value="既存" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=Meiryo;" parent="tag-flow-7" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tag-flow-10" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Meiryo;" parent="lane" source="tag-flow-3" target="decision-publish" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="390" as="sourcePoint" />
+            <mxPoint x="100" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="header" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=12;fontFamily=Meiryo;" value="&lt;b&gt;BIZ-PROJ-005 成果物情報下書き編集 業務フロー&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="320" x="40" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

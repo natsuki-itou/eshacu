@@ -1,4 +1,7 @@
-docs/
+docs/*
+!docs/specs/
+!docs/specs/**
+.codex/
 
 *.log
 *.tmp
@@ -8,3 +11,10 @@ eshacu-backend/target/
 
 # IDE
 .idea/
+
+# Local agent spec
+AGENTS.md
+/.serena/
+
+### VS Code ###
+.vscode/
