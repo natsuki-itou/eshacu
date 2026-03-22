@@ -1,4 +1,5 @@
 docs/*
+docs/logs/
 !docs/specs/
 !docs/specs/**
 .codex/
